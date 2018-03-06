@@ -8,6 +8,7 @@ package com.ecvictor.selenium.junit.classic;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -26,12 +27,13 @@ public class GuruTest {
     @BeforeTest
     public void setUp() throws Exception {
         //chose driver type
-        String os = (System.getProperty("os.name"));
-
-        if (os.equalsIgnoreCase("Mac OS X"))
-            System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
-        else System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
-        driver = new ChromeDriver();
+//        String os = (System.getProperty("os.name"));
+//
+//        if (os.equalsIgnoreCase("Mac OS X"))
+//            System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
+//        else System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+//        driver = new ChromeDriver();
+        driver= new FirefoxDriver();
         baseUrl = "http://www.guru99.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
