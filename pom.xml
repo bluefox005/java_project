@@ -183,12 +183,12 @@
                         <threadCount>1</threadCount>
                         <suiteXmlFiles>
                             <!--<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>-->
-                            <!--<suiteXmlFile>src/test/resources/demo-store-suite.xml</suiteXmlFile>-->
+							<!--<suiteXmlFile>src/test/resources/demo-store-suite.xml</suiteXmlFile>-->
                             <suiteXmlFile>src/test/resources/anotation-suite.xml</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
 
-					<dependencies>
+                    <dependencies>
                         <!--Disable the junit if needed-->
 						<!--<dependency>-->
 							<!--<groupId>org.apache.maven.surefire</groupId>-->
