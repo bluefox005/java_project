@@ -6,7 +6,7 @@
         <classes>
             <!--<class name="com.ecvictor.testng.employee.DemoStoreTest"/>-->
             <class name="com.ecvictor.selenium.junit.course2Test"/>
-            <class name="com.ecvictor.selenium.junit.classic.GuruTest"/>
+            <class name="com.ecvictor.api.rest.assured.o2o.ecvicms.WPDemoTest"/>
         </classes>
     </test>
 </suite>
