@@ -41,7 +41,7 @@ public class BitcoinPriceTest {
                             key, currencyPair.get(key)).
                     then().log().body().
                     statusCode(200).
-                    body("CAD", is(not(equalTo(7975.29))));
+                    body("CAD", is(not(equalTo(7979.29))));
         }
 
     }
